@@ -14,7 +14,7 @@ if [[ -f /etc/os-release ]] {
     return 2
   }
 
-  autoload -Uz is-at-least && if ! is-at-least 24.04 ${dist_version}; then
+  autoload -Uz is-at-least && if ! is-at-least 26.04 ${dist_version}; then
     log_error "Not running on a recent-enough Ubuntu distribution. Aborting"
     log_group
     return 2
